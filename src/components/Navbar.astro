@@ -1,0 +1,158 @@
+---
+import { Phone, Menu, X } from "@lucide/astro";
+---
+
+<nav id="main-nav" class="bg-transparent sticky top-0 z-50 backdrop-blur-sm transition-all duration-300">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-3 group">
+      <img
+        src="/assets/logo-dental.svg"
+        alt="logo"
+        class="w-10 h-10 transition-transform group-hover:scale-110"
+      />
+      <div>
+        <h1 class="text-lg font-bold text-gray-800">Clínica Dental</h1>
+        <p class="text-xs text-gray-500">Sonrisa & Salud</p>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a
+        class="text-gray-700 hover:text-blue-600 transition-colors font-medium relative group"
+        href="#services"
+      >
+        Servicios
+        <span
+          class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"
+        ></span>
+      </a>
+      <a
+        class="text-gray-700 hover:text-blue-600 transition-colors font-medium relative group"
+        href="#about"
+      >
+        Nosotros
+        <span
+          class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"
+        ></span>
+      </a>
+      <a
+        class="text-gray-700 hover:text-blue-600 transition-colors font-medium relative group"
+        href="#contact"
+      >
+        Contacto
+        <span
+          class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </div>
+
+    <!-- Desktop CTA -->
+    <div class="hidden md:flex items-center space-x-4">
+      <a
+        href="tel:+521234567890"
+        class="text-sm text-gray-700 hover:text-blue-600 flex items-center gap-2 transition-colors"
+      >
+        <Phone class="w-4 h-4" />
+        <span class="font-medium">(+52) 123 456 7890</span>
+      </a>
+      <a
+        href="#contact"
+        class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-all hover:shadow-lg hover:scale-105 font-medium"
+      >
+        Reservar Cita
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+    >
+      <Menu class="w-6 h-6" id="menu-icon" />
+      <X class="w-6 h-6 hidden" id="close-icon" />
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-white border-t border-gray-100"
+  >
+    <div class="container mx-auto px-6 py-4 space-y-3">
+      <a
+        class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg transition-colors font-medium"
+        href="#services"
+      >
+        Servicios
+      </a>
+      <a
+        class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg transition-colors font-medium"
+        href="#about"
+      >
+        Nosotros
+      </a>
+      <a
+        class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg transition-colors font-medium"
+        href="#contact"
+      >
+        Contacto
+      </a>
+      <a
+        class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 rounded-lg transition-colors font-medium flex items-center gap-2"
+        href="tel:+521234567890"
+      >
+        <Phone class="w-4 h-4" />
+        (+52) 123 456 7890
+      </a>
+      <a
+        href="#contact"
+        class="block bg-blue-600 text-white text-center px-5 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+      >
+        Reservar Cita
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+    menuIcon?.classList.toggle("hidden");
+    closeIcon?.classList.toggle("hidden");
+  });
+
+  // Cerrar menú al hacer click en un enlace
+  const mobileLinks = mobileMenu?.querySelectorAll("a");
+  mobileLinks?.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
+    });
+  });
+</script>
+
+<script>
+  (function () {
+    const nav = document.getElementById('main-nav');
+    if (!nav) return;
+    function onScroll() {
+      if (window.scrollY > 20) {
+        nav?.classList.add('bg-white/95', 'shadow-sm');
+        nav?.classList.remove('bg-transparent');
+      } else {
+        nav?.classList.remove('bg-white/95', 'shadow-sm');
+        nav?.classList.add('bg-transparent');
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>

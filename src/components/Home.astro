@@ -1,0 +1,154 @@
+---
+import { Phone, Calendar, Award, Users } from '@lucide/astro';
+import ImagenPrincipal from '../assets/dientes 1-min.png';
+---
+
+<section
+    class="relative min-h-screen bg-cover bg-center flex items-center overflow-hidden"
+    style="background-image: url('/assets/home.png');"
+    aria-label="Hero - Clínica dental"
+>
+    <!-- Gradient overlay mejorado -->
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/60 to-transparent"></div>
+    
+    <!-- Overlay oscuro para mejor legibilidad -->
+    <div class="absolute inset-0 bg-black/20"></div>
+
+    <!-- Formas decorativas animadas -->
+    <div class="absolute -left-32 top-1/4 w-96 h-96 rounded-full bg-blue-400/10 blur-3xl animate-pulse"></div>
+    <div class="absolute right-0 bottom-1/4 w-80 h-80 rounded-full bg-cyan-300/10 blur-3xl animate-pulse delay-1000"></div>
+    <div class="absolute left-1/2 top-0 w-64 h-64 rounded-full bg-white/5 blur-2xl"></div>
+
+    <div class="container mx-auto px-6 relative z-10 py-20 md:py-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Columna izquierda: Contenido principal -->
+            <div class="text-white space-y-6 animate-fade-in-up">
+                <!-- Badge -->
+                <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white rounded-full px-4 py-2 text-sm font-medium border border-white/20 shadow-lg">
+                    <Award class="w-4 h-4" />
+                    Cuidado dental de excelencia
+                </span>
+
+                <!-- Título principal -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
+                    Tu sonrisa perfecta 
+                    <span class="block mt-2 bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent">
+                        comienza aquí
+                    </span>
+                </h1>
+
+                <!-- Descripción -->
+                <p class="text-lg sm:text-xl text-blue-50/90 max-w-xl leading-relaxed">
+                    Ofrecemos tratamientos dentales de última generación con un equipo de especialistas dedicados a brindarte la mejor experiencia y resultados excepcionales.
+                </p>
+
+                <!-- Botones CTA -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a 
+                        href="/citas" 
+                        class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105 font-semibold group"
+                    >
+                        <Calendar class="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                        Agendar Cita
+                    </a>
+                    <a 
+                        href="#services" 
+                        class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-full hover:bg-white/10 backdrop-blur-sm transition-all font-semibold"
+                    >
+                        Conocer Servicios
+                        <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-8 max-w-2xl">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:bg-white/15 transition-all">
+                        <div class="text-4xl font-extrabold bg-gradient-to-br from-white to-blue-100 bg-clip-text text-transparent">15K+</div>
+                        <div class="text-sm text-blue-100 mt-1 font-medium">Pacientes felices</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:bg-white/15 transition-all">
+                        <div class="text-4xl font-extrabold bg-gradient-to-br from-white to-blue-100 bg-clip-text text-transparent">20+</div>
+                        <div class="text-sm text-blue-100 mt-1 font-medium">Años de experiencia</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:bg-white/15 transition-all hidden sm:block">
+                        <div class="text-4xl font-extrabold bg-gradient-to-br from-white to-blue-100 bg-clip-text text-transparent">98%</div>
+                        <div class="text-sm text-blue-100 mt-1 font-medium">Satisfacción</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Card informativa -->
+            <div class="relative none lg:flex items-center justify-center animate-fade-in-right">
+                <div class="max-w-md w-full bg-white/15 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:scale-105 transition-transform duration-500">
+                    <!-- Header con imagen -->
+                    <div class="flex items-start gap-5 mb-6">
+                        <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 flex-shrink-0">
+                            <img 
+                                src={ImagenPrincipal.src} 
+                                alt="Servicios dentales" 
+                                class="w-16 h-16 object-contain drop-shadow-lg" 
+                            />
+                        </div>
+                        <div class="text-white">
+                            <h3 class="font-bold text-2xl mb-2">Citas flexibles</h3>
+                            <p class="text-blue-100 text-sm leading-relaxed">
+                                Atención personalizada y horarios que se adaptan a tu estilo de vida.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="h-px bg-white/20 my-6"></div>
+
+                    <!-- Features -->
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center gap-3 text-white">
+                            <div class="bg-blue-500/30 rounded-full p-2">
+                                <Calendar class="w-4 h-4" />
+                            </div>
+                            <span class="text-sm font-medium">Agenda en línea 24/7</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <div class="bg-blue-500/30 rounded-full p-2">
+                                <Users class="w-4 h-4" />
+                            </div>
+                            <span class="text-sm font-medium">Equipo especializado</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <div class="bg-blue-500/30 rounded-full p-2">
+                                <Award class="w-4 h-4" />
+                            </div>
+                            <span class="text-sm font-medium">Tecnología de punta</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA de contacto -->
+                    <a 
+                        href="tel:+521234567890" 
+                        class="flex items-center justify-center gap-3 bg-white text-blue-700 rounded-full px-6 py-4 hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl group font-semibold"
+                    >
+                        <Phone class="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                        <span>(+52) 123 456 7890</span>
+                    </a>
+                </div>
+
+                <!-- Decoración flotante -->
+                <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-400/20 rounded-full blur-xl animate-bounce"></div>
+                <div class="absolute -bottom-6 -left-6 w-20 h-20 bg-cyan-400/20 rounded-full blur-xl animate-bounce delay-500"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce hidden md:block">
+        <a href="#services" class="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors">
+            <span class="text-xs uppercase tracking-wider font-medium">Descubre más</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </a>
+    </div>
+</section>
+
