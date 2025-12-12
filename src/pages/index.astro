@@ -1,5 +1,12 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Home from '../components/Home.astro';
+import Navbar from '../components/Navbar.astro';
+import Services from '../components/Services.astro';
+import About from '../components/About.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +14,17 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<head>
+		<meta name="description" content="Clínica dental profesional - estética, ortodoncia, implantes y cuidado general de la salud oral. Reserva tu cita hoy." />
+		<meta property="og:title" content="Clínica Dental - Sonríe con confianza" />
+	</head>
+
+	<Navbar />
+	<Home />
+	<Services />
+	<About />
+	<Testimonials />
+	<FAQ />
+	<Contact />
+	<Footer />
 </Layout>

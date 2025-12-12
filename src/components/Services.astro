@@ -1,0 +1,322 @@
+---
+import { Sparkles, Shield, Smile, Baby, Zap, Heart } from '@lucide/astro';
+import ImagenDientes1 from '../assets/dientes 1-min.png';
+import ImagenDiente2 from '../assets/diente 2-min.png';
+---
+
+<section id="services" class="py-20 bg-white relative overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 -translate-y-1/2"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-50 rounded-full blur-3xl opacity-50 translate-x-1/2 translate-y-1/2"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <span class="inline-block bg-blue-100 text-blue-700 rounded-full px-4 py-2 text-sm font-semibold mb-4">
+        Nuestros Servicios
+      </span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6">
+        Soluciones dentales para cada necesidad
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Atendemos todas las necesidades de salud bucal — estética, funcionalidad y prevención — con tecnología de punta y un equipo altamente calificado.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+      
+      <!-- Service 1: Ortodoncia -->
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-2 relative overflow-hidden">
+        <!-- Gradient overlay on hover -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <!-- Icon/Image -->
+          <div class="w-20 h-20 mb-6 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <img src={ImagenDientes1.src} alt="Ortodoncia" class="w-12 h-12 object-contain" />
+          </div>
+
+          <!-- Title -->
+          <h3 class="font-bold text-2xl text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+            Ortodoncia
+          </h3>
+
+          <!-- Description -->
+          <p class="text-gray-600 leading-relaxed mb-6 text-center">
+            Tratamientos de ortodoncia para todas las edades, incluyendo alineadores invisibles y brackets estéticos de última generación.
+          </p>
+
+          <!-- Features list -->
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Brackets tradicionales y estéticos</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Alineadores invisibles</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Ortodoncia para niños y adultos</span>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <a href="#contact" class="block text-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:underline">
+            Más información →
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 2: Implantes -->
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-2 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-20 h-20 mb-6 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <img src={ImagenDiente2.src} alt="Implantes" class="w-12 h-12 object-contain" />
+          </div>
+
+          <h3 class="font-bold text-2xl text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+            Implantes Dentales
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-6 text-center">
+            Implantes dentales seguros y estéticos de titanio para recuperar tu sonrisa y función masticatoria de forma permanente.
+          </p>
+
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Implantes unitarios y múltiples</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Prótesis sobre implantes</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Tecnología 3D y guía quirúrgica</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="block text-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:underline">
+            Más información →
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 3: Limpieza & Prevención -->
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-2 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-20 h-20 mb-6 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Sparkles class="w-12 h-12 text-blue-600" />
+          </div>
+
+          <h3 class="font-bold text-2xl text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+            Limpieza & Prevención
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-6 text-center">
+            Profilaxis profesional, selladores y planes de prevención personalizados para toda la familia.
+          </p>
+
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Limpieza dental profunda</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Aplicación de flúor</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Selladores dentales</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="block text-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:underline">
+            Más información →
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 4: Estética Dental -->
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-2 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-20 h-20 mb-6 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Smile class="w-12 h-12 text-blue-600" />
+          </div>
+
+          <h3 class="font-bold text-2xl text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+            Estética Dental
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-6 text-center">
+            Blanqueamiento, carillas y diseño de sonrisa para lograr la apariencia que siempre has deseado.
+          </p>
+
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Blanqueamiento profesional</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Carillas de porcelana</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Diseño de sonrisa digital</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="block text-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:underline">
+            Más información →
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 5: Endodoncia -->
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-2 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-20 h-20 mb-6 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Shield class="w-12 h-12 text-blue-600" />
+          </div>
+
+          <h3 class="font-bold text-2xl text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+            Endodoncia
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-6 text-center">
+            Tratamientos de conducto con tecnología rotativa para salvar tu pieza dental de forma indolora.
+          </p>
+
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Tratamiento de conductos</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Tecnología rotativa avanzada</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Procedimientos sin dolor</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="block text-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:underline">
+            Más información →
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 6: Odontopediatría -->
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-2 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="w-20 h-20 mb-6 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Baby class="w-12 h-12 text-blue-600" />
+          </div>
+
+          <h3 class="font-bold text-2xl text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+            Odontopediatría
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed mb-6 text-center">
+            Atención especializada para niños en un ambiente amigable que hace de cada visita una experiencia positiva.
+          </p>
+
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Tratamientos preventivos</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Manejo de conducta infantil</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Ambiente lúdico y amigable</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="block text-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:underline">
+            Más información →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-16 text-center">
+      <div class="max-w-3xl mx-auto bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 md:p-12 shadow-2xl">
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+          ¿No estás seguro qué tratamiento necesitas?
+        </h3>
+        <p class="text-blue-100 mb-6 text-lg">
+          Agenda una consulta gratuita y nuestros especialistas evaluarán tu caso para recomendarte el mejor plan de tratamiento.
+        </p>
+        <a 
+          href="#contact" 
+          class="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all shadow-lg hover:scale-105"
+        >
+          Agendar consulta gratuita
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

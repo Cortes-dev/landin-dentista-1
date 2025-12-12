@@ -1,0 +1,284 @@
+---
+import { Phone, MapPin, Clock, Mail, Send, MessageCircle } from '@lucide/astro';
+---
+
+<section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+  <!-- Decorative elements -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+  <div class="absolute bottom-0 right-0 w-80 h-80 bg-green-100 rounded-full blur-3xl opacity-30"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-16 max-w-2xl mx-auto">
+      <span class="inline-block bg-blue-100 text-blue-700 rounded-full px-4 py-2 text-sm font-semibold mb-4">
+        Contacto
+      </span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+        ¿Listo para tu mejor sonrisa?
+      </h2>
+      <p class="text-lg text-gray-600">
+        ¿Tienes dudas o quieres agendar tu próxima cita? Contáctanos, estaremos encantados de ayudarte.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 max-w-7xl mx-auto">
+      
+      <!-- Left Column: Contact Info -->
+      <div class="lg:col-span-2 space-y-6">
+        <!-- WhatsApp CTA Card -->
+        <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-8 text-white shadow-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center">
+              <MessageCircle class="w-6 h-6" />
+            </div>
+            <h3 class="text-2xl font-bold">Chatea con nosotros</h3>
+          </div>
+          <p class="mb-6 text-green-50">
+            Contáctanos directamente por WhatsApp para atención inmediata y agenda tu cita en minutos.
+          </p>
+          <a 
+            href="https://wa.me/521234567890?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20la%20cl%C3%ADnica%20dental" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 bg-white text-green-600 px-6 py-4 rounded-full font-semibold hover:bg-green-50 transition-all shadow-lg hover:scale-105 group"
+          >
+            <MessageCircle class="w-5 h-5 group-hover:rotate-12 transition-transform" />
+            Abrir WhatsApp
+          </a>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="space-y-4">
+          <!-- Phone -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Phone class="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Teléfono</h4>
+                <a href="tel:+521234567890" class="text-blue-600 hover:text-blue-700 font-medium">
+                  (+52) 123 456 7890
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <MapPin class="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Dirección</h4>
+                <address class="not-italic text-gray-600">
+                  Calle Ejemplo 123, Col. Centro<br/>
+                  Piedras Negras, Coahuila
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Clock class="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Horarios</h4>
+                <div class="text-gray-600 space-y-1 text-sm">
+                  <div>Lun - Vie: 9:00 AM - 7:00 PM</div>
+                  <div>Sábados: 9:00 AM - 2:00 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Mail class="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                <a href="mailto:contacto@clinicadental.com" class="text-blue-600 hover:text-blue-700 font-medium">
+                  contacto@clinicadental.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Form -->
+      <div class="lg:col-span-3">
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100">
+          <div class="mb-8">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Envíanos un mensaje
+            </h3>
+            <p class="text-gray-600">
+              Completa el formulario y te contactaremos vía WhatsApp lo antes posible
+            </p>
+          </div>
+
+          <form id="contactForm" class="space-y-6">
+            <!-- Name and Phone -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                  Nombre completo *
+                </label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name"
+                  placeholder="Ej: Juan Pérez" 
+                  class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none" 
+                  required 
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                  Teléfono *
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  placeholder="Ej: 878 123 4567" 
+                  class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none" 
+                  required 
+                />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Correo electrónico
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="ejemplo@correo.com" 
+                class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none" 
+              />
+            </div>
+
+            <!-- Service -->
+            <div>
+              <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">
+                Servicio de interés *
+              </label>
+              <select 
+                id="service" 
+                name="service"
+                class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none bg-white" 
+                required
+              >
+                <option value="">Selecciona un servicio</option>
+                <option value="Consulta General">Consulta General</option>
+                <option value="Ortodoncia">Ortodoncia</option>
+                <option value="Implantes Dentales">Implantes Dentales</option>
+                <option value="Limpieza y Prevención">Limpieza y Prevención</option>
+                <option value="Estética Dental">Estética Dental</option>
+                <option value="Endodoncia">Endodoncia</option>
+                <option value="Odontopediatría">Odontopediatría</option>
+                <option value="Urgencia">Urgencia</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Mensaje adicional
+              </label>
+              <textarea 
+                id="message" 
+                name="message"
+                rows="4" 
+                placeholder="Cuéntanos más sobre lo que necesitas..." 
+                class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Privacy Notice -->
+            <div class="flex items-start gap-3">
+              <input 
+                type="checkbox" 
+                id="privacy" 
+                name="privacy"
+                class="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" 
+                required 
+              />
+              <label for="privacy" class="text-sm text-gray-600">
+                Acepto el <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">aviso de privacidad</a> y autorizo el uso de mis datos para contacto.
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button 
+              type="submit" 
+              class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2 group"
+            >
+              <Send class="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Obtener valores del formulario
+    const name = (document.getElementById('name') as HTMLInputElement).value;
+    const phone = (document.getElementById('phone') as HTMLInputElement).value;
+    const email = (document.getElementById('email') as HTMLInputElement).value;
+    const service = (document.getElementById('service') as HTMLSelectElement).value;
+    const message = (document.getElementById('message') as HTMLTextAreaElement).value;
+    
+    // Construir mensaje profesional para WhatsApp
+    let whatsappMessage = `Hola, mi nombre es *${name}* \n\n`;
+    whatsappMessage += `× *Teléfono:* ${phone}\n`;
+    
+    if (email) {
+      whatsappMessage += `× *Email:* ${email}\n`;
+    }
+    
+    whatsappMessage += `× *Servicio de interés:* ${service}\n\n`;
+    
+    if (message) {
+      whatsappMessage += `× *Mensaje adicional:*\n${message}\n\n`;
+    }
+    
+    whatsappMessage += `Me gustaría agendar una cita. ¿Cuándo tienen disponibilidad? `;
+    
+    // Número de WhatsApp (reemplaza con el número real)
+    const whatsappNumber = import.meta.env.NUMTELEFONO;
+    
+    // Codificar mensaje para URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Crear URL de WhatsApp
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Abrir WhatsApp en nueva pestaña
+    window.open(whatsappURL, '_blank');
+    
+    // Opcional: Resetear formulario después de enviar
+    setTimeout(() => {
+      (e.target as HTMLFormElement).reset();
+    }, 500);
+  });
+</script>

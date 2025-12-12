@@ -1,0 +1,209 @@
+---
+import { Plus, Minus, CreditCard, Baby, Phone } from '@lucide/astro';
+---
+
+<section id="faq" class="py-20 bg-gradient-to-b from-white to-blue-50">
+  <div class="container mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-12 max-w-2xl mx-auto">
+      <span class="inline-block bg-blue-100 text-blue-700 rounded-full px-4 py-2 text-sm font-semibold mb-4">
+        FAQ
+      </span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+        Preguntas Frecuentes
+      </h2>
+      <p class="text-lg text-gray-600">
+        Respuestas rápidas a las dudas más comunes de nuestros pacientes
+      </p>
+    </div>
+
+    <!-- Accordion Container -->
+    <div class="max-w-3xl mx-auto space-y-4">
+      <!-- FAQ Item 1 -->
+      <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 overflow-hidden">
+        <button 
+          class="faq-button w-full px-6 py-5 flex items-center justify-between text-left group"
+          aria-expanded="false"
+        >
+          <div class="flex items-center gap-4 flex-1">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <CreditCard class="w-5 h-5" />
+            </div>
+            <span class="font-semibold text-gray-900 text-base md:text-lg pr-4">
+              ¿Ofrecen facilidades de pago?
+            </span>
+          </div>
+          <div class="flex-shrink-0 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+            <Plus class="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-transform faq-icon-plus" />
+            <Minus class="w-5 h-5 text-blue-600 hidden faq-icon-minus" />
+          </div>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="px-6 pb-5 pl-20">
+            <p class="text-gray-600 leading-relaxed">
+              Sí, aceptamos todas las tarjetas de crédito y débito principales. Además, ofrecemos <strong class="text-gray-900">planes de financiamiento flexibles</strong> a 3, 6 y 12 meses sin intereses. Nuestro equipo administrativo te ayudará a encontrar la mejor opción según tus necesidades.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 overflow-hidden">
+        <button 
+          class="faq-button w-full px-6 py-5 flex items-center justify-between text-left group"
+          aria-expanded="false"
+        >
+          <div class="flex items-center gap-4 flex-1">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <Baby class="w-5 h-5" />
+            </div>
+            <span class="font-semibold text-gray-900 text-base md:text-lg pr-4">
+              ¿Realizan tratamientos para niños?
+            </span>
+          </div>
+          <div class="flex-shrink-0 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+            <Plus class="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-transform faq-icon-plus" />
+            <Minus class="w-5 h-5 text-blue-600 hidden faq-icon-minus" />
+          </div>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="px-6 pb-5 pl-20">
+            <p class="text-gray-600 leading-relaxed">
+              Por supuesto. Contamos con especialistas en <strong class="text-gray-900">odontopediatría</strong> que brindan atención especializada para los más pequeños. Ofrecemos desde revisiones preventivas hasta tratamientos correctivos en un ambiente amigable y seguro diseñado especialmente para niños.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 overflow-hidden">
+        <button 
+          class="faq-button w-full px-6 py-5 flex items-center justify-between text-left group"
+          aria-expanded="false"
+        >
+          <div class="flex items-center gap-4 flex-1">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <Phone class="w-5 h-5" />
+            </div>
+            <span class="font-semibold text-gray-900 text-base md:text-lg pr-4">
+              ¿Cómo pido una cita de emergencia?
+            </span>
+          </div>
+          <div class="flex-shrink-0 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+            <Plus class="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-transform faq-icon-plus" />
+            <Minus class="w-5 h-5 text-blue-600 hidden faq-icon-minus" />
+          </div>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="px-6 pb-5 pl-20">
+            <p class="text-gray-600 leading-relaxed">
+              Para emergencias dentales, <strong class="text-gray-900">llámanos directamente</strong> al <a href="tel:+521234567890" class="text-blue-600 hover:text-blue-700 font-semibold">(+52) 123 456 7890</a>. También puedes usar nuestro formulario de contacto marcando la opción "emergencia". Hacemos todo lo posible por atenderte el mismo día.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 - Bonus -->
+      <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 overflow-hidden">
+        <button 
+          class="faq-button w-full px-6 py-5 flex items-center justify-between text-left group"
+          aria-expanded="false"
+        >
+          <div class="flex items-center gap-4 flex-1">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-900 text-base md:text-lg pr-4">
+              ¿Cuál es su horario de atención?
+            </span>
+          </div>
+          <div class="flex-shrink-0 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+            <Plus class="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-transform faq-icon-plus" />
+            <Minus class="w-5 h-5 text-blue-600 hidden faq-icon-minus" />
+          </div>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="px-6 pb-5 pl-20">
+            <p class="text-gray-600 leading-relaxed">
+              Estamos abiertos de <strong class="text-gray-900">lunes a viernes de 9:00 AM a 7:00 PM</strong> y <strong class="text-gray-900">sábados de 9:00 AM a 2:00 PM</strong>. Para emergencias fuera de este horario, contamos con un servicio de guardia disponible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA adicional -->
+    <div class="mt-12 text-center">
+      <p class="text-gray-600 mb-4">¿No encontraste lo que buscabas?</p>
+      <a 
+        href="#contact" 
+        class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105 shadow-lg"
+      >
+        Contáctanos directamente
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqButtons = document.querySelectorAll('.faq-button');
+    
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.closest('.faq-item');
+        const content = faqItem?.querySelector('.faq-content');
+        const iconPlus = button.querySelector('.faq-icon-plus');
+        const iconMinus = button.querySelector('.faq-icon-minus');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        // Cerrar todos los demás FAQs
+        faqButtons.forEach(otherButton => {
+          if (otherButton !== button) {
+            const otherItem = otherButton.closest('.faq-item');
+            const otherContent = otherItem?.querySelector('.faq-content');
+            const otherIconPlus = otherButton.querySelector('.faq-icon-plus');
+            const otherIconMinus = otherButton.querySelector('.faq-icon-minus');
+            
+            otherButton.setAttribute('aria-expanded', 'false');
+            otherContent?.style.setProperty('max-height', '0px');
+            otherIconPlus?.classList.remove('hidden', 'rotate-45');
+            otherIconMinus?.classList.add('hidden');
+          }
+        });
+        
+        // Toggle el FAQ actual
+        if (isExpanded) {
+          button.setAttribute('aria-expanded', 'false');
+          content?.style.setProperty('max-height', '0px');
+          iconPlus?.classList.remove('rotate-45');
+          iconMinus?.classList.add('hidden');
+          iconPlus?.classList.remove('hidden');
+        } else {
+          button.setAttribute('aria-expanded', 'true');
+          if (content) {
+            content.style.setProperty('max-height', `${content.scrollHeight}px`);
+          }
+          iconPlus?.classList.add('rotate-45', 'hidden');
+          iconMinus?.classList.remove('hidden');
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .faq-content {
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .faq-icon-plus,
+  .faq-icon-minus {
+    transition: transform 0.3s ease;
+  }
+</style>

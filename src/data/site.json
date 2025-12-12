@@ -1,0 +1,94 @@
+{
+  "brand": {
+    "name": "Clínica Dental",
+    "tagline": "Sonrisa & Salud",
+    "phone": "+521234567890",
+    "logo": "/assets/logo-dental.svg"
+  },
+  "hero": {
+    "badge": "✨ Cuidado dental de excelencia",
+    "title": "Tu sonrisa perfecta",
+    "titleAccent": "comienza aquí",
+    "subtitle": "Ofrecemos tratamientos dentales de última generación con un equipo de especialistas dedicados a brindarte la mejor experiencia y resultados excepcionales.",
+    "ctaPrimary": { "text": "Agendar Cita", "href": "/citas" },
+    "ctaSecondary": { "text": "Conocer Servicios", "href": "#services" },
+    "stats": [
+      { "value": "15K+", "label": "Pacientes felices" },
+      { "value": "20+", "label": "Años de experiencia" },
+      { "value": "98%", "label": "Satisfacción" }
+    ]
+  },
+  "services": [
+    {
+      "name": "Ortodoncia",
+      "description": "Tratamientos de ortodoncia para todas las edades, incluyendo alineadores invisibles y brackets estéticos.",
+      "image": "/assets/dientes%201-min.png",
+      "features": ["Brackets tradicionales y estéticos", "Alineadores invisibles", "Ortodoncia para niños y adultos"]
+    },
+    {
+      "name": "Implantes",
+      "description": "Implantes dentales seguros y estéticos de titanio para recuperar tu sonrisa y función masticatoria.",
+      "image": "/assets/diente%202-min.png",
+      "features": ["Implantes unitarios y múltiples", "Prótesis sobre implantes", "Tecnología 3D y guía quirúrgica"]
+    },
+    {
+      "name": "Limpieza & Prevención",
+      "description": "Profilaxis profesional, selladores y planes de prevención personalizados para toda la familia.",
+      "image": "/assets/home.png",
+      "features": ["Limpieza dental profunda", "Aplicación de flúor", "Selladores dentales"]
+    },
+    {
+      "name": "Estética Dental",
+      "description": "Blanqueamiento, carillas y diseño de sonrisa para lograr la apariencia que siempre has deseado.",
+      "image": "/assets/home.png",
+      "features": ["Blanqueamiento profesional", "Carillas de porcelana", "Diseño de sonrisa digital"]
+    },
+    {
+      "name": "Endodoncia",
+      "description": "Tratamientos de conducto con tecnología moderna para salvar piezas dentales de forma indolora.",
+      "image": "/assets/home.png",
+      "features": ["Tratamiento de conductos", "Tecnología rotativa avanzada", "Procedimientos sin dolor"]
+    },
+    {
+      "name": "Odontopediatría",
+      "description": "Atención especializada para niños en un ambiente amigable que hace de cada visita una experiencia positiva.",
+      "image": "/assets/home.png",
+      "features": ["Tratamientos preventivos", "Manejo de conducta infantil", "Ambiente lúdico y amigable"]
+    }
+  ],
+  "about": {
+    "title": "Sobre Nosotros",
+    "text": "Somos una clínica comprometida con la salud oral de nuestros pacientes. Contamos con especialistas certificados, tecnología de última generación y un enfoque humano centrado en la comodidad y bienestar del paciente.",
+    "features": [
+      {
+        "title": "Atención personalizada",
+        "description": "Planes de tratamiento adaptados a tus necesidades específicas"
+      },
+      {
+        "title": "Protocolos de seguridad",
+        "description": "Esterilización y control riguroso para tu tranquilidad"
+      },
+      {
+        "title": "Financiamiento disponible",
+        "description": "Facilidades de pago para que accedas a los tratamientos necesarios"
+      }
+    ]
+  },
+  "testimonials": [
+    { "name": "María L.", "text": "Excelente atención. Me sentí muy cómodo y el resultado fue increíble. Totalmente recomendable." },
+    { "name": "Carlos R.", "text": "Profesionales y amables en todo momento. El tratamiento fue claro y efectivo." },
+    { "name": "Sofía G.", "text": "La clínica cuenta con equipos modernos y el personal me explicó todo el procedimiento con paciencia." }
+  ],
+  "faq": [
+    { "q": "¿Ofrecen facilidades de pago?", "a": "Aceptamos tarjetas y ofrecemos planes de financiamiento a plazos. Consulta con nuestro equipo los detalles." },
+    { "q": "¿Realizan tratamientos para niños?", "a": "Sí, contamos con tratamiento pediátrico y planes preventivos para niños." },
+    { "q": "¿Cómo pido una cita de emergencia?", "a": "Ll�manos o utiliza nuestra sección de contacto para solicitar una cita de emergencia; siempre buscaremos acomodar tu caso." }
+  ],
+  "contact": {
+    "phone": "+521234567890",
+    "email": "contacto@clinicadental.com",
+    "address": "Calle Ejemplo 123, Col. Centro, Ciudad",
+    "hours": "Lun - Vie: 9:00 - 18:00"
+  },
+  "footer": { "copyright": "© 2025 Clínica Dental — Todos los derechos reservados" }
+}
